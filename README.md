@@ -8,7 +8,7 @@ Props to [handlebars-formatter](https://marketplace.visualstudio.com/items?itemN
 
 ## Features
 
-Format your handlebars files with Prettier ... that's it!
+Format your handlebars files with Prettier ... while also respecting your .prettierrc file
 
 Before
 

@@ -1,0 +1,44 @@
+{
+	"name": "vsc-prettier-glimmer",
+	"displayName": "vsc-prettier-glimmer",
+	"description": "Prettier glimmer formatter",
+	"author": "Adam Baker",
+	"license": "MIT",
+	"version": "0.0.1",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/bakerac4/vsc-prettier-glimmer"
+	},
+	"publisher": "AdamBaker",
+	"categories": [],
+	"keywords": [
+        "prettier glimmer"
+	],
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"activationEvents": [
+        "onLanguage:handlebars"
+    ],
+	"main": "./out/extension.js",
+	"contributes": {
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+        "@types/prettier": "^1.13.2",
+        "prettier": "^1.17.0"
+    }
+}
